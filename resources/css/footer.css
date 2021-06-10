@@ -1,0 +1,20 @@
+.footer {
+    width: 100vw;
+    background-color: #464B5C;
+    color: #ffffff;
+    margin: 30px 0 0 0;
+}
+
+.footer__container {
+    padding: 15px;
+}
+
+.footer__logo {
+    padding: 15px 15px 0 15px;
+    font-size: 28px;
+}
+
+.footer__copyright {
+    padding: 6px 0;
+    text-align: center;
+}
