@@ -17,5 +17,5 @@ mix.postCss('resources/css/global.css', 'public/css/global.css')
     .postCss('resources/css/hero.css', 'public/css/hero.css')
     .postCss('resources/css/footer.css', 'public/css/footer.css')
     .postCss('resources/css/produk.css', 'public/css/produk.css')
-    .js('resources/js/components/Produk.js', 'public/js/components/Produk.js')
+    .js('resources/js/components/Home.js', 'public/js/components/Home.js')
     .react();

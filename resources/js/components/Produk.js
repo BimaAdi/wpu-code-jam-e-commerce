@@ -51,7 +51,3 @@ const Produk = () => {
 }
 
 export default Produk
-
-if (document.querySelector('#Produk')) {
-    ReactDOM.render(<Produk />, document.querySelector('#Produk'))
-}

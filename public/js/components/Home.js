@@ -2,6 +2,28 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./resources/js/components/Home.js":
+/*!*****************************************!*\
+  !*** ./resources/js/components/Home.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var _Produk__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Produk */ "./resources/js/components/Produk.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+if (document.querySelector('#Produk')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Produk__WEBPACK_IMPORTED_MODULE_2__.default, {}), document.querySelector('#Produk'));
+}
+
+/***/ }),
+
 /***/ "./resources/js/components/Produk.js":
 /*!*******************************************!*\
   !*** ./resources/js/components/Produk.js ***!
@@ -76,10 +98,6 @@ var Produk = function Produk() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Produk);
-
-if (document.querySelector('#Produk')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(Produk, {}), document.querySelector('#Produk'));
-}
 
 /***/ }),
 
@@ -31355,7 +31373,7 @@ if (false) {} else {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/js/components/Produk": 0,
+/******/ 			"/js/components/Home": 0,
 /******/ 			"css/global": 0,
 /******/ 			"css/footer": 0,
 /******/ 			"css/hero": 0,
@@ -31409,7 +31427,7 @@ if (false) {} else {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/produk"], () => (__webpack_require__("./resources/js/components/Produk.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/produk"], () => (__webpack_require__("./resources/js/components/Home.js")))
 /******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/produk"], () => (__webpack_require__("./resources/css/global.css")))
 /******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/produk"], () => (__webpack_require__("./resources/css/navbar.css")))
 /******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/produk"], () => (__webpack_require__("./resources/css/section.css")))
