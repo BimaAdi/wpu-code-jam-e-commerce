@@ -15,7 +15,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             RakitLaptopSeeder::class,
-            RakitLaptopItemSeeder::class
+            RakitLaptopItemSeeder::class,
+            ProdukSeeder::class
         ]);
     }
 }
