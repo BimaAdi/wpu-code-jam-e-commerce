@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="/css/hero.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/produk.css">
+    <link rel="stylesheet" href="/css/rakit.css">
 </head>
 <body>
     <x-Navbar selected="Rakit Laptop"/>
     <x-Hero description="Buat Laptop Impianmu"/>
-    <h1>Rakit Laptop</h1>
     <div id="Rakit"></div>
+    <div class="rakit_laptop__button_wrapper">
+        <button class="rakit_laptop__button">Pesan Sekarang</button>
+    </div>
     <x-Footer />
-    <script src="/js/components/RakitItemPages.js"></script>
+    <script src="/js/rakit_laptop/Bootstrap.js"></script>
 </body>
 </html>

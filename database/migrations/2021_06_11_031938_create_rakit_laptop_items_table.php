@@ -17,6 +17,7 @@ class CreateRakitLaptopItemsTable extends Migration
             $table->id();
             $table->string('name');
             $table->integer('price');
+            $table->boolean('selected')->default(false);
             $table->unsignedBigInteger('rakit_laptop_id');
             $table->timestamps();
 

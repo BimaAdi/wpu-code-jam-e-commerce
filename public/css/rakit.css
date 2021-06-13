@@ -1,0 +1,83 @@
+.rakit__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 0 10px 0 10px;
+}
+
+@media only screen and (min-width: 500px) {
+    .rakit__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 0 10px 0 10px;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .rakit__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin: 0 10px 0 10px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .rakit__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        width: 75%;
+        margin: 0 10px 0 10px;
+    }
+}
+
+.rakit_item__wrapper {
+    width: 100%;
+}
+
+.rakit_item__select {
+    padding: 15px 5px 15px 10px;
+    border: 1px solid white;
+    background-color: #FFCA4B;
+    color: #000000;
+}
+
+.rakit_item__select:hover {
+    cursor: pointer;
+    border: 1px solid #C4C4C4;
+}
+
+.rakit_item__not_select {
+    padding: 15px 5px 15px 10px;
+    border: 1px solid white;
+    background-color: #F7F7F8;
+    color: #000000;
+}
+
+.rakit_item__not_select:hover {
+    cursor: pointer;
+    border: 1px solid #C4C4C4;
+}
+
+.rakit_item__price {
+    font-size: 10px;
+    color: #000000;
+}
+
+.rakit_laptop__button_wrapper {
+    width: 100vw;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.rakit_laptop__button {
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #FFCA4B;
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+}

@@ -2046,6 +2046,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/css/rakit.css":
+/*!*********************************!*\
+  !*** ./resources/css/rakit.css ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/css/search.css":
 /*!**********************************!*\
   !*** ./resources/css/search.css ***!
@@ -33502,6 +33515,7 @@ if (false) {} else {
 /******/ 			"css/section": 0,
 /******/ 			"css/navbar": 0,
 /******/ 			"css/search": 0,
+/******/ 			"css/rakit": 0,
 /******/ 			"css/detail_produk": 0,
 /******/ 			"css/semua_produk": 0,
 /******/ 			"css/produk": 0
@@ -33552,16 +33566,17 @@ if (false) {} else {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/js/components/Home.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/global.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/navbar.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/section.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/hero.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/footer.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/produk.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/semua_produk.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/detail_produk.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/search.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/js/components/Home.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/global.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/navbar.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/section.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/hero.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/footer.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/produk.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/semua_produk.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/detail_produk.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/rakit.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/search.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
