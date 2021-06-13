@@ -14,7 +14,7 @@
 </head>
 <body>
     <x-Navbar selected="Beranda"/>
-    <x-Hero />
+    <x-Hero description="Temukan laptop impianmu"/>
     <x-Section />
     <div id="Produk"></div>
     <x-Footer />

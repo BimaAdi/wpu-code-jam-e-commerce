@@ -1,3 +1,6 @@
 <div class="hero">
-    <!-- Simplicity is the essence of happiness. - Cedric Bledsoe -->
+    <div> 
+        <h1>Assembly</h1>
+        <p>{{ $description }}</p>
+    </div>
 </div>
