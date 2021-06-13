@@ -19,6 +19,7 @@ class ProdukController extends Controller
         $ram_size = $request->query('ram_size', null);
         $type = $request->query('type', null);
         $gpu = $request->query('gpu', null);
+        $search = $request->query('search', null);
         $page = $request->query('page', 1);
         $size = $request->query('size', 5);
 
@@ -41,6 +42,14 @@ class ProdukController extends Controller
 
         if ($gpu != null) {
             $produks = $produks->where('gpu', $gpu);
+        }
+
+        if ($search != null && $search != '') {
+            $produks = $produks
+                ->where(function ($query) use ($search) {
+                    $query->where('name', 'LIKE', '%'.$search.'%')
+                    ->orWhere('brand', 'LIKE', '%'.$search.'%');
+                });
         }
 
         $produks = $produks->limit($size)->offset($size * ($page - 1));
