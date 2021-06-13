@@ -19,6 +19,8 @@ class ProdukController extends Controller
         $ram_size = $request->query('ram_size', null);
         $type = $request->query('type', null);
         $gpu = $request->query('gpu', null);
+        $page = $request->query('page', 1);
+        $size = $request->query('size', 5);
 
         $produks = Produk::select('*');
         if ($brand != null) {
@@ -40,6 +42,8 @@ class ProdukController extends Controller
         if ($gpu != null) {
             $produks = $produks->where('gpu', $gpu);
         }
+
+        $produks = $produks->limit($size)->offset($size * ($page - 1));
         return response()->json($produks->get(), 200);
     }
 
