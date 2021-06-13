@@ -1,0 +1,29 @@
+.search__search_container {
+    display: flex;
+    margin: 40px 10px 20px 10px;
+}
+
+.search__input_text {
+    padding: 10px 0; 
+    width: 100%;
+}
+
+.search__input_button {
+    border: none;
+    margin: 0 0 0 10px;
+    border-radius: 5px;
+    padding: 2px 15px;
+    background-color: #FFCA4B;
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search__select_container {
+    display: flex;
+    margin: 0 0 0 10px;
+}
+
+.search__select_item {
+    margin-right: 10px;
+}

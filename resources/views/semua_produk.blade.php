@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Assembly | Semua Produk</title>
     <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/semua_produk.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/hero.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/produk.css">
+    <link rel="stylesheet" href="/css/search.css">
 </head>
 <body>
     <x-Navbar selected="Semua Produk"/>
-    <div></div>
-    <h1>Semua Produk</h1>
+    {{-- <h1>Semua Produk</h1> --}}
+    <div id="Produk"></div>
     <x-Footer />
+    <script src="/js/semua_produk/Bootstrap.js"></script>
 </body>
 </html>

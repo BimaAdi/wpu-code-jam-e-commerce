@@ -1,7 +1,6 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 
-const ProdukItem = ({img_url, product_name, price}) => {
+const ProdukItem = ({img_url, brand, product_name, price}) => {
     return (
         <div className="produk_item__flex">
             <div className="produk_item__img">
@@ -12,9 +11,9 @@ const ProdukItem = ({img_url, product_name, price}) => {
                 /> */}
             </div>
             <div className="produk_item__produk_description">
-                <div className="produk_item__name">{product_name}</div>
+                <div className="produk_item__name">{brand} {product_name}</div>
                 <div className="produk_item__price">Rp {price}</div>
-                <button className="produk_item__button">Lihat detail</button>
+                <a className="produk_item__button" href="/">Lihat Detail</a>
             </div>
         </div>
     )

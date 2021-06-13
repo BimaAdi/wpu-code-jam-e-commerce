@@ -1,9 +1,13 @@
 {
     "/js/components/Home.js": "/js/components/Home.js",
+    "/js/components/RakitItemPages.js": "/js/components/RakitItemPages.js",
+    "/js/semua_produk/Bootstrap.js": "/js/semua_produk/Bootstrap.js",
     "/css/global.css": "/css/global.css",
     "/css/footer.css": "/css/footer.css",
     "/css/hero.css": "/css/hero.css",
     "/css/section.css": "/css/section.css",
     "/css/navbar.css": "/css/navbar.css",
+    "/css/search.css": "/css/search.css",
+    "/css/semua_produk.css": "/css/semua_produk.css",
     "/css/produk.css": "/css/produk.css"
 }
