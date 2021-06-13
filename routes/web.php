@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DetailProduk;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,5 @@ Route::get('/semua-produk', function () {
 Route::get('/rakit-laptop', function () {
     return view('rakit_laptop');
 })->name('rakit-laptop');
+
+Route::get('/detail-produk/{id}', [DetailProduk::class, 'show']);

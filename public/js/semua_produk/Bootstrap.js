@@ -1932,7 +1932,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ProdukItem = function ProdukItem(_ref) {
-  var img_url = _ref.img_url,
+  var id = _ref.id,
+      img_url = _ref.img_url,
       brand = _ref.brand,
       product_name = _ref.product_name,
       price = _ref.price;
@@ -1950,7 +1951,7 @@ var ProdukItem = function ProdukItem(_ref) {
         children: ["Rp ", price]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
         className: "produk_item__button",
-        href: "/",
+        href: "detail-produk/".concat(id),
         children: "Lihat Detail"
       })]
     })]
