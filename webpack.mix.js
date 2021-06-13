@@ -21,7 +21,7 @@ mix.postCss('resources/css/global.css', 'public/css/global.css')
     .postCss('resources/css/detail_produk.css', 'public/css/detail_produk.css')
     .postCss('resources/css/rakit.css', 'public/css/rakit.css')
     .postCss('resources/css/search.css', 'public/css/search.css')
-    .js('resources/js/components/Home.js', 'public/js/components/Home.js')
+    .js('resources/js/Home/Bootstrap.js', 'public/js/Home/Bootstrap.js')
     .js('resources/js/semua_produk/Bootstrap.js', 'public/js/semua_produk/Bootstrap.js')
     .js('resources/js/rakit_laptop/Bootstrap.js', 'public/js/rakit_laptop/Bootstrap.js')
     .react();

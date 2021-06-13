@@ -1834,17 +1834,17 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./resources/js/components/Home.js":
-/*!*****************************************!*\
-  !*** ./resources/js/components/Home.js ***!
-  \*****************************************/
+/***/ "./resources/js/Home/Bootstrap.js":
+/*!****************************************!*\
+  !*** ./resources/js/Home/Bootstrap.js ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var _Produk__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Produk */ "./resources/js/components/Produk.js");
+/* harmony import */ var _Produk__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Produk */ "./resources/js/Home/Produk.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -1857,10 +1857,10 @@ if (document.querySelector('#Produk')) {
 
 /***/ }),
 
-/***/ "./resources/js/components/Produk.js":
-/*!*******************************************!*\
-  !*** ./resources/js/components/Produk.js ***!
-  \*******************************************/
+/***/ "./resources/js/Home/Produk.js":
+/*!*************************************!*\
+  !*** ./resources/js/Home/Produk.js ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1872,7 +1872,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _ProdukItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ProdukItem */ "./resources/js/components/ProdukItem.js");
+/* harmony import */ var _ProdukItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ProdukItem */ "./resources/js/Home/ProdukItem.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -1958,10 +1958,10 @@ var Produk = function Produk() {
 
 /***/ }),
 
-/***/ "./resources/js/components/ProdukItem.js":
-/*!***********************************************!*\
-  !*** ./resources/js/components/ProdukItem.js ***!
-  \***********************************************/
+/***/ "./resources/js/Home/ProdukItem.js":
+/*!*****************************************!*\
+  !*** ./resources/js/Home/ProdukItem.js ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -33508,7 +33508,7 @@ if (false) {} else {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/js/components/Home": 0,
+/******/ 			"/js/Home/Bootstrap": 0,
 /******/ 			"css/global": 0,
 /******/ 			"css/footer": 0,
 /******/ 			"css/hero": 0,
@@ -33566,7 +33566,7 @@ if (false) {} else {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/js/components/Home.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/js/Home/Bootstrap.js")))
 /******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/global.css")))
 /******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/navbar.css")))
 /******/ 	__webpack_require__.O(undefined, ["css/global","css/footer","css/hero","css/section","css/navbar","css/search","css/rakit","css/detail_produk","css/semua_produk","css/produk"], () => (__webpack_require__("./resources/css/section.css")))

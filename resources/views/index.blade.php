@@ -18,6 +18,6 @@
     <x-Section />
     <div id="Produk"></div>
     <x-Footer />
-    <script src="/js/components/Home.js"></script>
+    <script src="/js/Home/Bootstrap.js"></script>
 </body>
 </html>
