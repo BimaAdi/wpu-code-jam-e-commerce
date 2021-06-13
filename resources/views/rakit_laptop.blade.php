@@ -15,6 +15,8 @@
     <x-Navbar selected="Rakit Laptop"/>
     <x-Hero />
     <h1>Rakit Laptop</h1>
+    <div id="Rakit"></div>
     <x-Footer />
+    <script src="/js/components/RakitItemPages.js"></script>
 </body>
 </html>
