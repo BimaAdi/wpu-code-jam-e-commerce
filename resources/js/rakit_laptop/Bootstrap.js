@@ -22,7 +22,7 @@ const Main = () => {
             {selectData.map((x) => {
                 return (
                     <>
-                        <h1>{x.title}</h1>
+                        <h1 className="rakit__sub_title">{x.title}</h1>
                         <Rakit key={x.id} selectItems={x.items}/>
                     </>
                 )

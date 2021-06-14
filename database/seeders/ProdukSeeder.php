@@ -16,7 +16,7 @@ class ProdukSeeder extends Seeder
     {
         DB::table('produks')->insert([
             [
-                'name' => 'T14s (Intel)',
+                'name' => 'T14 (Intel)',
                 'price' => 500000,
                 'brand' => 'Lenovo',
                 'processor' => 'Intel Core I5',
@@ -25,7 +25,7 @@ class ProdukSeeder extends Seeder
                 'type' => 'Office'
             ],
             [
-                'name' => 'T14s (AMD)',
+                'name' => 'T14 (AMD)',
                 'price' => 450000,
                 'brand' => 'Lenovo',
                 'processor' => 'AMD Ryzen 5',
@@ -34,7 +34,7 @@ class ProdukSeeder extends Seeder
                 'type' => 'Office'
             ],
             [
-                'name' => 'X1 Carbon Gen 9',
+                'name' => 'X1 Carbon',
                 'price' => 1100000,
                 'brand' => 'Lenovo',
                 'processor' => 'Intel Core I7',
@@ -52,7 +52,7 @@ class ProdukSeeder extends Seeder
                 'type' => 'Gaming'
             ],
             [
-                'name' => 'Ideapad Slim 9I',
+                'name' => 'Ideapad 9I',
                 'price' => 300000,
                 'brand' => 'Lenovo',
                 'processor' => 'AMD Ryzen 3',
@@ -91,7 +91,7 @@ class ProdukSeeder extends Seeder
                 'type' => 'Office'
             ],
             [
-                'name' => 'Alienware Area 51',
+                'name' => 'Alienware',
                 'price' => 2100000,
                 'brand' => 'Dell',
                 'processor' => 'Intel Core I7',

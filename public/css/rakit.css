@@ -66,6 +66,11 @@
     color: #000000;
 }
 
+.rakit__sub_title {
+    margin: 30px 0 10px 10px;
+    color: #464B5C;
+}
+
 .rakit_laptop__button_wrapper {
     width: 100vw;
     text-align: center;
