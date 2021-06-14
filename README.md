@@ -1,4 +1,6 @@
 # WPU Code Jam E Commerce
+website jual dan rakit laptop Assembly.
+live demo bisa dilihat pada [https://assemblytestalpha.com/](https://assemblytestalpha.com/)
 
 ## Daftar isi
 - [requirements](##Requirements)
