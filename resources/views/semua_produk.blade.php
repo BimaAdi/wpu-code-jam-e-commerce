@@ -15,8 +15,9 @@
 </head>
 <body>
     <x-Navbar selected="Semua Produk"/>
-    {{-- <h1>Semua Produk</h1> --}}
-    <div id="Produk"></div>
+    <main>
+        <div id="Produk"></div>
+    </main>
     <x-Footer />
     <script src="/js/semua_produk/Bootstrap.js"></script>
 </body>

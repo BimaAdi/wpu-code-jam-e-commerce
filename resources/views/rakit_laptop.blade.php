@@ -14,11 +14,13 @@
 </head>
 <body>
     <x-Navbar selected="Rakit Laptop"/>
-    <x-Hero description="Buat Laptop Impianmu"/>
-    <div id="Rakit"></div>
-    <div class="rakit_laptop__button_wrapper">
-        <button class="rakit_laptop__button">Pesan Sekarang</button>
-    </div>
+    <main>
+        <x-Hero description="Buat Laptop Impianmu"/>
+        <div id="Rakit"></div>
+        <div class="rakit_laptop__button_wrapper">
+            <button class="rakit_laptop__button">Pesan Sekarang</button>
+        </div>
+    </main>
     <x-Footer />
     <script src="/js/rakit_laptop/Bootstrap.js"></script>
 </body>
