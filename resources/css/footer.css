@@ -1,4 +1,6 @@
 .footer {
+    position: absolute;
+    bottom: 0;
     width: 100vw;
     background-color: #464B5C;
     color: #ffffff;

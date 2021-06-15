@@ -14,9 +14,11 @@
 </head>
 <body>
     <x-Navbar selected="Beranda"/>
-    <x-Hero description="Temukan laptop impianmu"/>
-    <x-Section />
-    <div id="Produk"></div>
+    <main>
+        <x-Hero description="Temukan laptop impianmu"/>
+        <x-Section />
+        <div id="Produk"></div>
+    </main>
     <x-Footer />
     <script src="/js/Home/Bootstrap.js"></script>
 </body>
