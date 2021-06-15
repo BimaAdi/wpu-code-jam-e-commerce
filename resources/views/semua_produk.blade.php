@@ -16,7 +16,7 @@
 <body>
     <x-Navbar selected="Semua Produk"/>
     <main>
-        <div id="Produk"></div>
+        <div id="Produk" data-initial="{{ $produks_json }}"></div>
     </main>
     <x-Footer />
     <script src="/js/semua_produk/Bootstrap.js"></script>

@@ -33317,20 +33317,14 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-var Main = function Main() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
+var Main = function Main(_ref) {
+  var initial_data = _ref.initial_data;
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(initial_data),
       _useState2 = _slicedToArray(_useState, 2),
       selectData = _useState2[0],
       setSelectData = _useState2[1];
 
-  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
-    axios__WEBPACK_IMPORTED_MODULE_2___default().get('/api/rakit-laptop').then(function (x) {
-      console.log(x.data);
-      setSelectData(x.data);
-    })["catch"](function (err) {
-      console.error(err);
-    });
-  }, []);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     children: selectData.map(function (x) {
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
@@ -33345,8 +33339,13 @@ var Main = function Main() {
   });
 };
 
+var element = document.querySelector('#Rakit');
+
 if (document.querySelector('#Rakit')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_0__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(Main, {}), document.querySelector('#Rakit'));
+  var initial_data = JSON.parse(element.getAttribute('data-initial'));
+  react_dom__WEBPACK_IMPORTED_MODULE_0__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(Main, {
+    initial_data: initial_data
+  }), document.querySelector('#Rakit'));
 }
 })();
 

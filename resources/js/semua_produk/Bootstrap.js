@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import axios from 'axios'
 import Produk from './Produk'
 import Search from './Search'
 
-const Main = () => {
-    const [produkData, setProdukData] = useState([])
+const Main = ({initial_data}) => {
+    const [produkData, setProdukData] = useState(initial_data)
     const [searchData, setSearchData] = useState({
         type: '',
         brand: '',
@@ -14,29 +14,6 @@ const Main = () => {
         GPU: '',
         search: ''
     })
-
-    useEffect(() => {
-        axios.get('/api/produk', {
-            params: {
-                page: 1,
-                size: 15
-            }
-        })
-        .then((response) => {
-            setProdukData(response.data.map((x) => {
-                return {
-                    id: x.id,
-                    brand: x.brand,
-                    product_name: x.name,
-                    price: x.price,
-                    img_url: ''
-                }
-            }))
-        })
-        .catch((err) => {
-            console.error(err)
-        })
-    }, [])
 
     const handleSearchChange = (key, event) => {
         event.preventDefault()
@@ -110,6 +87,8 @@ const Main = () => {
     )
 }
 
+let element = document.querySelector('#Produk')
 if (document.querySelector('#Produk')) {
-    ReactDOM.render(<Main />, document.querySelector('#Produk'))
+    let initial_data = JSON.parse(element.getAttribute('data-initial'))
+    ReactDOM.render(<Main initial_data={initial_data}/>, document.querySelector('#Produk'))
 }

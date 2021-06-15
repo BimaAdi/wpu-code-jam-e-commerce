@@ -1,21 +1,10 @@
 import ReactDOM from 'react-dom'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 import Rakit from './Rakit'
 
-const Main = () => {
-    const [selectData, setSelectData] = useState([])
-
-    useEffect(() => {
-        axios.get('/api/rakit-laptop')
-        .then((x) => {
-            console.log(x.data)
-            setSelectData(x.data)
-        })
-        .catch((err) => {
-            console.error(err)
-        })
-    }, [])
+const Main = ({initial_data}) => {
+    const [selectData, setSelectData] = useState(initial_data)
 
     return (
         <div>
@@ -31,6 +20,8 @@ const Main = () => {
     )
 }
 
+let element = document.querySelector('#Rakit')
 if (document.querySelector('#Rakit')) {
-    ReactDOM.render(<Main />, document.querySelector('#Rakit'))
+    let initial_data = JSON.parse(element.getAttribute('data-initial'))
+    ReactDOM.render(<Main initial_data={initial_data}/>, document.querySelector('#Rakit'))
 }

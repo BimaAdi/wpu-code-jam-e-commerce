@@ -34273,8 +34273,10 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-var Main = function Main() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
+var Main = function Main(_ref) {
+  var initial_data = _ref.initial_data;
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(initial_data),
       _useState2 = _slicedToArray(_useState, 2),
       produkData = _useState2[0],
       setProdukData = _useState2[1];
@@ -34290,27 +34292,6 @@ var Main = function Main() {
       _useState4 = _slicedToArray(_useState3, 2),
       searchData = _useState4[0],
       setSearchData = _useState4[1];
-
-  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
-    axios__WEBPACK_IMPORTED_MODULE_3___default().get('/api/produk', {
-      params: {
-        page: 1,
-        size: 15
-      }
-    }).then(function (response) {
-      setProdukData(response.data.map(function (x) {
-        return {
-          id: x.id,
-          brand: x.brand,
-          product_name: x.name,
-          price: x.price,
-          img_url: ''
-        };
-      }));
-    })["catch"](function (err) {
-      console.error(err);
-    });
-  }, []);
 
   var handleSearchChange = function handleSearchChange(key, event) {
     event.preventDefault();
@@ -34343,7 +34324,7 @@ var Main = function Main() {
   };
 
   var handleSearchClick = /*#__PURE__*/function () {
-    var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
       var response;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
         while (1) {
@@ -34386,7 +34367,7 @@ var Main = function Main() {
     }));
 
     return function handleSearchClick() {
-      return _ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     };
   }();
 
@@ -34402,8 +34383,13 @@ var Main = function Main() {
   });
 };
 
+var element = document.querySelector('#Produk');
+
 if (document.querySelector('#Produk')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_2__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(Main, {}), document.querySelector('#Produk'));
+  var initial_data = JSON.parse(element.getAttribute('data-initial'));
+  react_dom__WEBPACK_IMPORTED_MODULE_2__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(Main, {
+    initial_data: initial_data
+  }), document.querySelector('#Produk'));
 }
 })();
 

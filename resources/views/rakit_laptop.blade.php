@@ -16,7 +16,7 @@
     <x-Navbar selected="Rakit Laptop"/>
     <main>
         <x-Hero description="Buat Laptop Impianmu"/>
-        <div id="Rakit"></div>
+        <div id="Rakit" data-initial="{{ $rakit_laptop_json }}"></div>
         <div class="rakit_laptop__button_wrapper">
             <button class="rakit_laptop__button">Pesan Sekarang</button>
         </div>
